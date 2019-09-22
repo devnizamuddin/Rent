@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Navigation.AddNewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Give your Ad"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="12sp"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+
+            <Spinner
+                android:id="@+id/area_name_sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:hint="Enter Area Name"
+                android:paddingRight="50dp"
+
+                />
+            <LinearLayout
+                android:id="@+id/map_location"
+                android:layout_below="@+id/area_name_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                >
+                <TextView
+                    android:id="@+id/location_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/picture_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Location for Map" />
+
+                <ImageView
+                    android:id="@+id/add_location_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_add_location_black_24dp"
+                    android:layout_below="@id/location_txt"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/description_et"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/map_location"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/simple_et_background"
+                android:gravity="start"
+                android:hint="Enter description"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/add_picture_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description_et"
+                android:layout_marginTop="20dp"
+                android:text="Add picture" />
+
+            <LinearLayout
+                android:id="@+id/picture_layout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/add_picture_text"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/image_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_backround_one"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/image_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_backround_one"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/image_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_backround_one"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picture_layout"
+                android:layout_marginTop="20dp"
+                android:text="Set Price As" />
+
+            <RadioGroup
+                android:id="@+id/price_type_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amount_tv"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/per_night_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily" />
+
+                <RadioButton
+                    android:id="@+id/per_month_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/price_type_rg"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/amount_et"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_et_background"
+                    android:gravity="center"
+                    android:hint="Enter Amount"
+                    android:inputType="number" />
+
+                <ImageView
+                    android:id="@+id/upload_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/upload_btn" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

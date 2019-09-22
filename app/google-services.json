@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "379940470897",
+    "firebase_url": "https://rent-f920a.firebaseio.com",
+    "project_id": "rent-f920a",
+    "storage_bucket": "rent-f920a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379940470897:android:a3c132a729884f6ee39bd0",
+        "android_client_info": {
+          "package_name": "com.example.rent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379940470897-k8p03qqk26t368q7gu2kvm3guql7abaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rent",
+            "certificate_hash": "73cd0fba79eb6e898b82ba9f256713a15362fc55"
+          }
+        },
+        {
+          "client_id": "379940470897-lo2ce8dpmocd9nd7ug04rl8lmhoc2fb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFtkbD8jV4u5k8LwTG-KCMOaUd4w1l5fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379940470897-lo2ce8dpmocd9nd7ug04rl8lmhoc2fb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
