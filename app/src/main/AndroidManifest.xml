@@ -13,20 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Navigation.MyAdd.BookingHistory.HistoryActivity"></activity>
-        <activity android:name=".Navigation.Home.ViewLocationActivity" />
-        <activity android:name=".Navigation.MyAdd.Request.RequestActivity" />
-        <activity android:name=".Navigation.Home.HotelViewActivity" />
-        <activity android:name=".Navigation.Home.HouseViewActivity" />
+        <activity android:name=".screen.myads.MyAdsDetailActivity"></activity>
+        <activity android:name=".screen.createads.CreateAds" />
+        <activity android:name=".screen.booking.HistoryActivity" />
+        <activity android:name=".screen.home.ViewLocationActivity" />
+        <activity android:name=".screen.notification.RequestActivity" />
+        <activity android:name=".screen.home.hotel.HotelViewActivity" />
+        <activity android:name=".screen.home.house.HouseViewActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".Auth.LoginActivity"
+            android:name=".auth.LoginActivity"
             android:theme="@style/NoActionBarTheme" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".screen.SplashScreen"
             android:label="@string/app_name"
             android:theme="@style/NoActionBarTheme">
             <intent-filter>

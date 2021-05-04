@@ -7,14 +7,18 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/navigation_add_new"
-        android:icon="@drawable/new_ad_icon"
-        android:title="New" />
+        android:id="@+id/ads_nav"
+        android:icon="@drawable/ads_icon"
+        android:title="My Ads" />
     <item
-        android:id="@+id/navigation_ads"
-        android:icon="@drawable/add_icon"
-        android:title="Mine" />
+        android:id="@+id/notification_nav"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notification" />
 
+    <item
+        android:id="@+id/booking_nav"
+        android:icon="@drawable/booking_png"
+        android:title="Booking" />
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/profile_icon"

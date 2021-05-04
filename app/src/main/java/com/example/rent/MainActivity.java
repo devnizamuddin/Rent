@@ -2,10 +2,11 @@ package com.example.rent;
 
 import android.os.Bundle;
 
-import com.example.rent.Navigation.AddNewFragment;
-import com.example.rent.Navigation.Home.HomeFragment;
-import com.example.rent.Navigation.MyAdd.MyAdsFragment;
-import com.example.rent.Navigation.ProfileFragment;
+import com.example.rent.screen.myads.MyAdsFragment;
+import com.example.rent.screen.home.HomeFragment;
+import com.example.rent.screen.notification.BookingRequestFragment;
+import com.example.rent.screen.profile.ProfileFragment;
+import com.example.rent.screen.booking.BookingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AlertDialog;
@@ -19,10 +20,8 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,11 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     changeFragment(new HomeFragment());
                     break;
-                case R.id.navigation_add_new:
-                    changeFragment(new AddNewFragment());
-                    break;
-                case R.id.navigation_ads:
+                case R.id.ads_nav:
                     changeFragment(new MyAdsFragment());
+                    break;
+                case R.id.notification_nav:
+                    changeFragment(new BookingRequestFragment());
+                    break;
+                case R.id.booking_nav:
+                    changeFragment(new BookingFragment());
                     break;
                 case R.id.navigation_profile:
                     changeFragment(new ProfileFragment());
